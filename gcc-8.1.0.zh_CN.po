@@ -33,7 +33,7 @@ msgstr ""
 "Project-Id-Version: gcc 6.1.0\n"
 "Report-Msgid-Bugs-To: https://gcc.gnu.org/bugs/\n"
 "POT-Creation-Date: 2018-05-01 20:30+0000\n"
-"PO-Revision-Date: 2018-05-09 15:15+0800\n"
+"PO-Revision-Date: 2018-05-09 21:57+0800\n"
 "Last-Translator: Mingye Wang (Arthur2e5) <arthur200126@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -644,7 +644,7 @@ msgid ""
 msgstr ""
 "\n"
 "链接器选项\n"
-"=========\n"
+"==============\n"
 "\n"
 
 #: gcc.c:8347
@@ -689,7 +689,7 @@ msgstr "    -o, --output <dir>                  输出目录\n"
 #: gcov-tool.c:177 gcov-tool.c:273 gcov-tool.c:425
 #, c-format
 msgid "    -v, --verbose                       Verbose mode\n"
-msgstr "    -v, --verbo      se                 输出更多信息\n"
+msgstr "    -v, --verbose                      输出更多信息\n"
 
 #: gcov-tool.c:178
 #, c-format
@@ -1160,10 +1160,9 @@ msgid "branch %2d taken %s%s"
 msgstr "branch %2d 被执行 %s%s\n"
 
 #: gcov.c:2697
-#, fuzzy, c-format
-#| msgid "branch %2d never executed\n"
+#, c-format
 msgid "branch %2d never executed"
-msgstr "branch %2d 从未被执行\n"
+msgstr "分支 %2d 从未被执行"
 
 #: gcov.c:2700
 #, c-format
@@ -1236,7 +1235,7 @@ msgstr "搜索列表结束。\n"
 #. Opening quotation mark.
 #: intl.c:62
 msgid "`"
-msgstr "‘"
+msgstr "`"
 
 #. Closing quotation mark.
 #: intl.c:65
@@ -1480,7 +1479,7 @@ msgstr ""
 #: toplev.c:631
 #, c-format
 msgid "%s%s%s %sversion %s (%s) compiled by CC, "
-msgstr "%s%s%s %s版本 %s (%s)，由 CC 编译，"
+msgstr "%s%s%s %s版本 %s (%s)，由 CC 编译， "
 
 #: toplev.c:635
 #, c-format
@@ -1648,7 +1647,7 @@ msgstr "错误： "
 
 #: diagnostic.def:36
 msgid "sorry, unimplemented: "
-msgstr "对不起，尚未实现："
+msgstr "对不起，尚未实现： "
 
 #: diagnostic.def:37
 msgid "warning: "
@@ -3448,9 +3447,9 @@ msgid "missing operand"
 msgstr "缺少操作数"
 
 #: config/aarch64/aarch64.c:6908
-#, fuzzy, c-format
+#, c-format
 msgid "invalid constant"
-msgstr "%<#pragma pack%>中有无效常量 - 已忽略"
+msgstr "无效常量"
 
 #: config/aarch64/aarch64.c:6911
 #, c-format
@@ -3458,7 +3457,7 @@ msgid "invalid operand"
 msgstr "无效的操作数"
 
 #: config/aarch64/aarch64.c:7040 config/aarch64/aarch64.c:7045
-#, fuzzy, c-format
+#, c-format
 msgid "invalid operand prefix '%%%c'"
 msgstr "‘%%%c’不是一个有效的操作数前缀"
 
@@ -3654,9 +3653,9 @@ msgstr "在条件序列中预测到的指令"
 
 #: config/arm/arm.c:22159 config/arm/arm.c:22172 config/arm/arm.c:22197
 #: config/nios2/nios2.c:3056
-#, fuzzy, c-format
+#, c-format
 msgid "Unsupported operand for code '%c'"
-msgstr "代码‘%c’的操作数无效"
+msgstr "代码‘%c’的操作数不被支持"
 
 #: config/arm/arm.c:22274 config/arm/arm.c:22296 config/arm/arm.c:22306
 #: config/arm/arm.c:22316 config/arm/arm.c:22326 config/arm/arm.c:22365
@@ -4819,9 +4818,8 @@ msgid "illegal operand detected"
 msgstr "检测到无效的操作数"
 
 #: config/visium/visium.c:3374
-#, fuzzy
 msgid "illegal operand "
-msgstr "不合法的算子"
+msgstr "不合法的操作数"
 
 #: config/visium/visium.c:3425
 #, fuzzy
@@ -6278,13 +6276,12 @@ msgid "-mas100-syntax is incompatible with -gdwarf"
 msgstr "-mas100-syntax 与 -gdwarf 不兼容"
 
 #: config/rx/rx.h:81
-#, fuzzy
 msgid "rx100 cpu does not have FPU hardware"
-msgstr "RX200 CPU 没有 FPU 硬件"
+msgstr "rx100 CPU 没有 FPU 硬件"
 
 #: config/rx/rx.h:82
 msgid "rx200 cpu does not have FPU hardware"
-msgstr "RX200 CPU 没有 FPU 硬件"
+msgstr "rx200 CPU 没有 FPU 硬件"
 
 #: config/s390/tpf.h:121
 msgid "static is not supported on TPF-OS"
@@ -6343,10 +6340,8 @@ msgid ""
 msgstr "objc ++-cpp-output 被不宜用；请使用 objective-c++-cpp-output 作为替代"
 
 #: fortran/lang.opt:146
-#, fuzzy
-#| msgid "-J<directory>\tPut MODULE files in 'directory'"
 msgid "-J<directory>\tPut MODULE files in 'directory'."
-msgstr "-J<目录>\t将 MODULE 文件放入目录"
+msgstr "-J<目录>\t将 MODULE 文件放入目录。"
 
 #: fortran/lang.opt:198
 #, fuzzy
@@ -6467,10 +6462,8 @@ msgid "Warn if the pointer in a pointer assignment might outlive its target."
 msgstr "%L处计算转移 GOTO 语句的选择表达式必须是一个标量整数表达式"
 
 #: fortran/lang.opt:318
-#, fuzzy
-#| msgid "Warn about \"suspicious\" constructs"
 msgid "Warn about \"suspicious\" constructs."
-msgstr "对“可疑”的构造给出警告"
+msgstr "对“可疑”的构造给出警告。"
 
 #: fortran/lang.opt:322
 #, fuzzy
@@ -6504,10 +6497,8 @@ msgid "Warn about zero-trip DO loops."
 msgstr "对长度为 0 的格式字符串给出警告"
 
 #: fortran/lang.opt:354
-#, fuzzy
-#| msgid "Enable preprocessing"
 msgid "Enable preprocessing."
-msgstr "启用预处理"
+msgstr "启用预处理。"
 
 #: fortran/lang.opt:362
 msgid "Disable preprocessing."
@@ -6610,10 +6601,8 @@ msgid "Treat lines with 'D' in column one as comments."
 msgstr "将第一列为‘D’的行视作注释"
 
 #: fortran/lang.opt:441
-#, fuzzy
-#| msgid "Enable Plan 9 language extensions"
 msgid "Enable all DEC language extensions."
-msgstr "启用九号计划语言扩展"
+msgstr "启用所有 DEC 语言扩展。"
 
 #: fortran/lang.opt:445
 msgid "Enable kind-specific variants of integer intrinsic functions."
@@ -6624,9 +6613,8 @@ msgid "Enable legacy math intrinsics for compatibility."
 msgstr ""
 
 #: fortran/lang.opt:453
-#, fuzzy
 msgid "Enable support for DEC STRUCTURE/RECORD."
-msgstr "启用对巨型对象的支持"
+msgstr "启用对 DEC STRUCTURE/RECORD 的支持。"
 
 #: fortran/lang.opt:457
 msgid "Enable DEC-style STATIC and AUTOMATIC attributes."
@@ -7034,10 +7022,8 @@ msgid "Conform to the ISO Fortran 95 standard."
 msgstr "符合 ISO Fortran 95 标准。"
 
 #: fortran/lang.opt:815
-#, fuzzy
-#| msgid "Conform to nothing in particular"
 msgid "Conform to nothing in particular."
-msgstr "不特别遵循任何标准"
+msgstr "不特别遵循任何标准。"
 
 #: fortran/lang.opt:819
 #, fuzzy
@@ -7082,10 +7068,8 @@ msgid ""
 msgstr "-A<问题>=<答案>\t给出问题的答案。在问题前加一个‘-’将禁用其答案"
 
 #: c-family/c.opt:186
-#, fuzzy
-#| msgid "Do not discard comments"
 msgid "Do not discard comments."
-msgstr "不丢弃注释"
+msgstr "不丢弃注释。"
 
 #: c-family/c.opt:190
 #, fuzzy
@@ -7187,10 +7171,8 @@ msgid "-MT <target>\tAdd an unquoted target."
 msgstr "-MT <目标>\t添加一个不被括起的目标"
 
 #: c-family/c.opt:253
-#, fuzzy
-#| msgid "Do not generate #line directives"
 msgid "Do not generate #line directives."
-msgstr "不生成 #line 指令"
+msgstr "不生成 #line 指令。"
 
 #: c-family/c.opt:257
 #, fuzzy
@@ -8694,10 +8676,8 @@ msgid "Scope of for-init-statement variables is local to the loop."
 msgstr "for 循环初始化中定义的变量作用域局限于循环内"
 
 #: c-family/c.opt:1449
-#, fuzzy
-#| msgid "Do not assume that standard C libraries and \"main\" exist"
 msgid "Do not assume that standard C libraries and \"main\" exist."
-msgstr "不假定标准 C 库和“main”存在"
+msgstr "不假定标准 C 库和“main”存在。"
 
 #: c-family/c.opt:1453
 msgid "Recognize GNU-defined keywords."
@@ -8945,10 +8925,8 @@ msgid ""
 msgstr "指定对象文件可能在运行时被换入以允许“修复并继续”调试模式"
 
 #: c-family/c.opt:1677
-#, fuzzy
-#| msgid "Enable automatic template instantiation"
 msgid "Enable automatic template instantiation."
-msgstr "启用模板自动实例化"
+msgstr "启用模板自动实例化。"
 
 #: c-family/c.opt:1681
 #, fuzzy
@@ -8976,15 +8954,13 @@ msgid "When \"signed\" or \"unsigned\" is not given make the bitfield signed."
 msgstr "没有给定“signed”或“unsigned”时将位段视作有符号的"
 
 #: c-family/c.opt:1697 ada/gcc-interface/lang.opt:81
-#, fuzzy
-#| msgid "Make \"char\" signed by default"
 msgid "Make \"char\" signed by default."
-msgstr "使“char”类型默认为有符号"
+msgstr "使“char”类型默认为有符号。"
 
 #: c-family/c.opt:1701
 #, fuzzy
 msgid "Enable C++14 sized deallocation support."
-msgstr "启用硬件十进制浮点支持"
+msgstr "启用 C++ 14 取消分配支持。"
 
 #: c-family/c.opt:1708
 msgid ""
@@ -9048,18 +9024,13 @@ msgid ""
 msgstr "-fno-threadsafe-statics\t不为局部静态变量生成线程安全的初始化代码"
 
 #: c-family/c.opt:1779
-#, fuzzy
-#| msgid ""
-#| "When \"signed\" or \"unsigned\" is not given make the bitfield unsigned"
 msgid ""
 "When \"signed\" or \"unsigned\" is not given make the bitfield unsigned."
-msgstr "未指定“signed”或“unsigned”时默认位段为无符号的"
+msgstr "未指定“signed”或“unsigned”时默认位段为无符号的。"
 
 #: c-family/c.opt:1783
-#, fuzzy
-#| msgid "Make \"char\" unsigned by default"
 msgid "Make \"char\" unsigned by default."
-msgstr "使“char”类型默认为无符号"
+msgstr "使“char”类型默认为无符号。"
 
 #: c-family/c.opt:1787
 #, fuzzy
@@ -9115,10 +9086,8 @@ msgid ""
 msgstr "为 Zero-Link 模式生成后期类查找(通过 objc_getClass())"
 
 #: c-family/c.opt:1831
-#, fuzzy
-#| msgid "Dump declarations to a .decl file"
 msgid "Dump declarations to a .decl file."
-msgstr "将声明转储到一个 .decl 文件中"
+msgstr "将声明转储到一个 .decl 文件中。"
 
 #: c-family/c.opt:1835
 #, fuzzy
@@ -9397,10 +9366,8 @@ msgid "Deprecated in favor of -std=iso9899:1999."
 msgstr "已弃用，为 -std=iso9899:1999 所取代"
 
 #: c-family/c.opt:2091
-#, fuzzy
-#| msgid "Enable traditional preprocessing"
 msgid "Enable traditional preprocessing."
-msgstr "启用传统预处理"
+msgstr "启用传统预处理。"
 
 #: c-family/c.opt:2095
 #, fuzzy
@@ -9415,10 +9382,8 @@ msgid "Do not predefine system-specific and GCC-specific macros."
 msgstr "不预定义系统或 GCC 特定的宏"
 
 #: ada/gcc-interface/lang.opt:61
-#, fuzzy
-#| msgid "Synonym of -gnatk8"
 msgid "Synonym of -gnatk8."
-msgstr "-gnatk8 的同义词"
+msgstr "-gnatk8 的同义词。"
 
 #: ada/gcc-interface/lang.opt:69
 #, fuzzy
@@ -9712,22 +9677,16 @@ msgid "Do not generate a single exit point for each function."
 msgstr "不为每个函数生成单一的退出点"
 
 #: config/mmix/mmix.opt:95
-#, fuzzy
-#| msgid "Set start-address of the program"
 msgid "Set start-address of the program."
-msgstr "设定程序的起始地址"
+msgstr "设置程序的起始地址。"
 
 #: config/mmix/mmix.opt:99
-#, fuzzy
-#| msgid "Set start-address of data"
 msgid "Set start-address of data."
-msgstr "设定数据的起始地址"
+msgstr "设置数据的起始地址。"
 
 #: config/darwin.opt:117
-#, fuzzy
-#| msgid "Generate compile-time CFString objects"
 msgid "Generate compile-time CFString objects."
-msgstr "生成编译时 CFString 对象"
+msgstr "生成编译期的 CFString 对象。"
 
 #: config/darwin.opt:214
 #, fuzzy
@@ -9790,10 +9749,8 @@ msgid "The version of ld64 in use for this toolchain."
 msgstr ""
 
 #: config/bfin/bfin.opt:40 config/msp430/msp430.opt:3 config/c6x/c6x.opt:38
-#, fuzzy
-#| msgid "Use simulator runtime"
 msgid "Use simulator runtime."
-msgstr "使用仿真器运行时"
+msgstr "使用仿真器运行时。"
 
 #: config/bfin/bfin.opt:44 config/arm/arm.opt:111
 msgid "Specify the name of the target CPU."
@@ -10492,32 +10449,24 @@ msgid "Use uClibc C library."
 msgstr "使用 uClibc C 标准库。"
 
 #: config/linux.opt:36
-#, fuzzy
-#| msgid "Use uClibc C library"
 msgid "Use musl C library."
-msgstr "使用 uClibc C 标准库"
+msgstr "使用 musl C 标准库。"
 
 #: config/ia64/ilp32.opt:3
 msgid "Generate ILP32 code."
 msgstr "生成 ILP32 代码。"
 
 #: config/ia64/ilp32.opt:7
-#, fuzzy
-#| msgid "Generate LP64 code"
 msgid "Generate LP64 code."
-msgstr "生成 LP64 代码"
+msgstr "生成 LP64 代码。"
 
 #: config/ia64/ia64.opt:28
-#, fuzzy
-#| msgid "Generate big endian code"
 msgid "Generate big endian code."
-msgstr "生成大端在前的代码"
+msgstr "生成大端序代码。"
 
 #: config/ia64/ia64.opt:32
-#, fuzzy
-#| msgid "Generate little endian code"
 msgid "Generate little endian code."
-msgstr "生成小端在前的代码"
+msgstr "生成小端序代码。"
 
 #: config/ia64/ia64.opt:36
 msgid "Generate code for GNU as."
@@ -10534,22 +10483,16 @@ msgid "Emit stop bits before and after volatile extended asms."
 msgstr "在 volatile 扩展汇编块前后加上停止位"
 
 #: config/ia64/ia64.opt:48
-#, fuzzy
-#| msgid "Use in/loc/out register names"
 msgid "Use in/loc/out register names."
-msgstr "使用 in/loc/out 寄存器名"
+msgstr "使用 in/loc/out 寄存器名。"
 
 #: config/ia64/ia64.opt:55
-#, fuzzy
-#| msgid "Enable use of sdata/scommon/sbss"
 msgid "Enable use of sdata/scommon/sbss."
-msgstr "启用 sdata/scommon/sbss"
+msgstr "启用使用 sdata/scommon/sbss。"
 
 #: config/ia64/ia64.opt:59
-#, fuzzy
-#| msgid "Generate code without GP reg"
 msgid "Generate code without GP reg."
-msgstr "生成不使用 GP 寄存器的代码"
+msgstr "生成不使用 GP reg 的代码。"
 
 #: config/ia64/ia64.opt:63
 #, fuzzy
@@ -10558,58 +10501,40 @@ msgid "gp is constant (but save/restore gp on indirect calls)."
 msgstr "gp 是常量(但当间接调用时保存/恢复 gp)"
 
 #: config/ia64/ia64.opt:67
-#, fuzzy
-#| msgid "Generate self-relocatable code"
 msgid "Generate self-relocatable code."
-msgstr "生成自身重定位代码"
+msgstr "生成自身可重定位代码。"
 
 #: config/ia64/ia64.opt:71
-#, fuzzy
-#| msgid "Generate inline floating point division, optimize for latency"
 msgid "Generate inline floating point division, optimize for latency."
-msgstr "生成内联浮点除法，为最小延迟优化"
+msgstr "生成内联浮点除法，为延迟优化。"
 
 #: config/ia64/ia64.opt:75
-#, fuzzy
-#| msgid "Generate inline floating point division, optimize for throughput"
 msgid "Generate inline floating point division, optimize for throughput."
-msgstr "生成内联浮点除法，为最大吞吐量优化"
+msgstr "生成内联浮点除法，为吞吐量优化。"
 
 #: config/ia64/ia64.opt:82
-#, fuzzy
-#| msgid "Generate inline integer division, optimize for latency"
 msgid "Generate inline integer division, optimize for latency."
-msgstr "生成内联的整数除法，为最小延迟优化"
+msgstr "生成内联的整数除法，为延迟优化。"
 
 #: config/ia64/ia64.opt:86
-#, fuzzy
-#| msgid "Generate inline integer division, optimize for throughput"
 msgid "Generate inline integer division, optimize for throughput."
-msgstr "生成内联的整数除法，为最大吞吐量优化"
+msgstr "生成内联的整数除法，为吞吐量优化。"
 
 #: config/ia64/ia64.opt:90
-#, fuzzy
-#| msgid "Do not inline integer division"
 msgid "Do not inline integer division."
-msgstr "不内联整数除法"
+msgstr "不内联整数除法。"
 
 #: config/ia64/ia64.opt:94
-#, fuzzy
-#| msgid "Generate inline square root, optimize for latency"
 msgid "Generate inline square root, optimize for latency."
-msgstr "生成内联的平方根，为最小延迟优化"
+msgstr "生成内联的平方根，为延迟优化。"
 
 #: config/ia64/ia64.opt:98
-#, fuzzy
-#| msgid "Generate inline square root, optimize for throughput"
 msgid "Generate inline square root, optimize for throughput."
-msgstr "生成内联的平方根，为最大吞吐量优化"
+msgstr "生成内联的平方根，为吞吐量优化。"
 
 #: config/ia64/ia64.opt:102
-#, fuzzy
-#| msgid "Do not inline square root"
 msgid "Do not inline square root."
-msgstr "不内联平方根函数"
+msgstr "不内联平方根函数。"
 
 #: config/ia64/ia64.opt:106
 #, fuzzy
@@ -10662,10 +10587,8 @@ msgid "Use data speculation after reload."
 msgstr "在重加载后使用数据投机"
 
 #: config/ia64/ia64.opt:144
-#, fuzzy
-#| msgid "Use control speculation"
 msgid "Use control speculation."
-msgstr "使用控制投机"
+msgstr "使用控制推测。"
 
 #: config/ia64/ia64.opt:148
 #, fuzzy
@@ -10795,10 +10718,8 @@ msgid ""
 msgstr "可能因允许双发射而改善性能时插入 nop(默认)"
 
 #: config/spu/spu.opt:48
-#, fuzzy
-#| msgid "Use standard main function as entry for startup"
 msgid "Use standard main function as entry for startup."
-msgstr "使用标准 main 函数作为启动入口"
+msgstr "使用标准 main 函数作为启动入口。"
 
 #: config/spu/spu.opt:52
 msgid "Generate branch hints for branches."
@@ -10883,9 +10804,8 @@ msgid "Enable split of 32 bit immediate loads into low / high part."
 msgstr "启用分割的 32 比特即时加载进入低/高部分"
 
 #: config/epiphany/epiphany.opt:60
-#, fuzzy
 msgid "Enable use of POST_INC / POST_DEC."
-msgstr "错误的地址，不是 post_inc 或 pre_dec："
+msgstr "启用使用 POST_INC / POST_DEC。"
 
 #: config/epiphany/epiphany.opt:64
 #, fuzzy
@@ -10941,18 +10861,16 @@ msgid "Use the floating point unit for integer add/subtract."
 msgstr "使用浮点转换指令"
 
 #: config/epiphany/epiphany.opt:136
-#, fuzzy
 msgid "Set register to hold -1."
-msgstr "设定 sizeof(bool) 为 1"
+msgstr "设置寄存器以存放 -1。"
 
 #: config/ft32/ft32.opt:23
 msgid "target the software simulator."
 msgstr ""
 
 #: config/ft32/ft32.opt:27 config/s390/s390.opt:231 config/mips/mips.opt:389
-#, fuzzy
 msgid "Use LRA instead of reload."
-msgstr "请使用 %.100s 作为替代"
+msgstr "使用 LRA 代替 reload。"
 
 #: config/ft32/ft32.opt:31
 msgid "Avoid use of the DIV and MOD instructions"
@@ -11063,66 +10981,46 @@ msgid "Pretend that branches are expensive."
 msgstr "假定分支代价很高昂"
 
 #: config/pdp11/pdp11.opt:55
-#, fuzzy
-#| msgid "Use the DEC assembler syntax"
 msgid "Use the DEC assembler syntax."
-msgstr "使用 DEC 汇编风格"
+msgstr "使用 DEC 汇编器语法。"
 
 #: config/pdp11/pdp11.opt:59
-#, fuzzy
-#| msgid "Use 32 bit float"
 msgid "Use 32 bit float."
-msgstr "使用 32 位浮点数"
+msgstr "使用 32 位浮点数。"
 
 #: config/pdp11/pdp11.opt:63
-#, fuzzy
-#| msgid "Use 64 bit float"
 msgid "Use 64 bit float."
-msgstr "使用 64 位浮点数"
+msgstr "使用 64 位浮点数。"
 
 #: config/pdp11/pdp11.opt:67 config/powerpcspe/powerpcspe.opt:177
 #: config/rs6000/rs6000.opt:196 config/frv/frv.opt:158
-#, fuzzy
-#| msgid "Use hardware floating point"
 msgid "Use hardware floating point."
-msgstr "使用硬件浮点单元"
+msgstr "使用硬件浮点单元。"
 
 #: config/pdp11/pdp11.opt:71
-#, fuzzy
-#| msgid "Use 16 bit int"
 msgid "Use 16 bit int."
-msgstr "使用 16 位整数"
+msgstr "使用 16 位整数。"
 
 #: config/pdp11/pdp11.opt:75
-#, fuzzy
-#| msgid "Use 32 bit int"
 msgid "Use 32 bit int."
-msgstr "使用 32 位整数"
+msgstr "使用 32 位整数。"
 
 #: config/pdp11/pdp11.opt:79 config/powerpcspe/powerpcspe.opt:173
 #: config/rs6000/rs6000.opt:192
-#, fuzzy
-#| msgid "Do not use hardware floating point"
 msgid "Do not use hardware floating point."
-msgstr "不使用硬件浮点单元"
+msgstr "不使用硬件浮点单元。"
 
 #: config/pdp11/pdp11.opt:83
-#, fuzzy
-#| msgid "Target has split I&D"
 msgid "Target has split I&D."
-msgstr "目标机有分离的指令、数据空间"
+msgstr "目标机有分离的指令、数据空间。"
 
 #: config/pdp11/pdp11.opt:87
-#, fuzzy
-#| msgid "Use UNIX assembler syntax"
 msgid "Use UNIX assembler syntax."
-msgstr "使用 UNIX 汇编风格"
+msgstr "使用 UNIX 汇编器语法。"
 
 #: config/xtensa/xtensa.opt:23
-#, fuzzy
-#| msgid "Use CONST16 instruction to load constants"
 msgid "Use CONST16 instruction to load constants."
-msgstr "使用 CONST16 指令加载常量"
+msgstr "使用 CONST16 指令加载常量。"
 
 #: config/xtensa/xtensa.opt:27
 #, fuzzy
@@ -11130,10 +11028,8 @@ msgid "Disable position-independent code (PIC) for use in OS kernel code."
 msgstr "尽可能生成与位置无关的代码(大模式)"
 
 #: config/xtensa/xtensa.opt:31
-#, fuzzy
-#| msgid "Use indirect CALLXn instructions for large programs"
 msgid "Use indirect CALLXn instructions for large programs."
-msgstr "为大型程序使用间接 CALLXn 指令"
+msgstr "为大型程序使用间接 CALLXn 指令。"
 
 #: config/xtensa/xtensa.opt:35
 #, fuzzy
@@ -11223,47 +11119,34 @@ msgid "Warn about none ISO msvcrt scanf/printf width extensions."
 msgstr "对非 ISO 标准的 msvcrt scanf/printf 宽度扩展给出警告"
 
 #: config/i386/mingw-w64.opt:23
-#, fuzzy
-#| msgid "Use unicode startup and define UNICODE macro"
 msgid "Use unicode startup and define UNICODE macro."
-msgstr "使用 unicode 启动并且定义 UNICODE 宏"
+msgstr "使用 unicode 启动并且定义 UNICODE 宏。"
 
 #: config/i386/i386.opt:192
-#, fuzzy
-#| msgid "sizeof(long double) is 16"
 msgid "sizeof(long double) is 16."
-msgstr "sizeof(long double) 等于 16"
+msgstr "sizeof(long double) 等于 16。"
 
 #: config/i386/i386.opt:196 config/i386/i386.opt:364
-#, fuzzy
-#| msgid "Use hardware fp"
 msgid "Use hardware fp."
-msgstr "使用硬件浮点单元"
+msgstr "使用硬件浮点单元。"
 
 #: config/i386/i386.opt:200
-#, fuzzy
-#| msgid "sizeof(long double) is 12"
 msgid "sizeof(long double) is 12."
-msgstr "sizeof(long double) 等于 12"
+msgstr "sizeof(long double) 等于 12。"
 
 #: config/i386/i386.opt:204
-#, fuzzy
 msgid "Use 80-bit long double."
-msgstr "使用 64 位 long double"
+msgstr "使用 80 位 long double."
 
 #: config/i386/i386.opt:208 config/s390/s390.opt:160
 #: config/sparc/long-double-switch.opt:27 config/alpha/alpha.opt:102
-#, fuzzy
-#| msgid "Use 64-bit long double"
 msgid "Use 64-bit long double."
-msgstr "使用 64 位 long double"
+msgstr "使用 64 位 long double。"
 
 #: config/i386/i386.opt:212 config/s390/s390.opt:156
 #: config/sparc/long-double-switch.opt:23 config/alpha/alpha.opt:98
-#, fuzzy
-#| msgid "Use 128-bit long double"
 msgid "Use 128-bit long double."
-msgstr "使用 128 位 long double"
+msgstr "使用 128 位 long double。"
 
 #: config/i386/i386.opt:216 config/sh/sh.opt:179
 #, fuzzy
@@ -11340,10 +11223,8 @@ msgid ""
 msgstr "在 x86-64 中等模式下大于指定阈值的数据将被存放在 .ldata 节中"
 
 #: config/i386/i386.opt:283
-#, fuzzy
-#| msgid "Use given x86-64 code model"
 msgid "Use given x86-64 code model."
-msgstr "使用给定的 x86-64 代码模式"
+msgstr "使用给定的 x86-64 代码模式。"
 
 #: config/i386/i386.opt:306
 #, fuzzy
@@ -11457,16 +11338,12 @@ msgid "Number of registers used to pass integer arguments."
 msgstr "用以传递整数参数的寄存器个数"
 
 #: config/i386/i386.opt:436
-#, fuzzy
-#| msgid "Alternate calling convention"
 msgid "Alternate calling convention."
-msgstr "更改调用约定"
+msgstr "更改调用约定。"
 
 #: config/i386/i386.opt:440 config/alpha/alpha.opt:23
-#, fuzzy
-#| msgid "Do not use hardware fp"
 msgid "Do not use hardware fp."
-msgstr "不使用硬件浮点单元"
+msgstr "不使用硬件浮点单元。"
 
 #: config/i386/i386.opt:444
 #, fuzzy
@@ -12323,10 +12200,8 @@ msgid "Set the max size of data eligible for the TDA area."
 msgstr "为 TDA 区域合格的数据设置最大尺寸"
 
 #: config/v850/v850.opt:82
-#, fuzzy
-#| msgid "Do not enforce strict alignment"
 msgid "Do not enforce strict alignment."
-msgstr "不强制严格对齐"
+msgstr "不强制严格对齐。"
 
 #: config/v850/v850.opt:86
 #, fuzzy
@@ -12683,21 +12558,16 @@ msgid ""
 msgstr ""
 
 #: config/powerpcspe/powerpcspe.opt:346 config/rs6000/rs6000.opt:350
-#, fuzzy
-#| msgid "Generate isel instructions"
 msgid "Generate isel instructions."
-msgstr "生成 isel 指令"
+msgstr "生成 isel 指令。"
 
 #: config/powerpcspe/powerpcspe.opt:350 config/rs6000/rs6000.opt:354
-#, fuzzy
-#| msgid "Deprecated option.  Use -mno-isel instead"
 msgid "Deprecated option.  Use -mno-isel instead."
-msgstr "该选项已弃用。请换用 -mno-isel"
+msgstr "该选项已弃用。  请换用 -mno-isel 代替。"
 
 #: config/powerpcspe/powerpcspe.opt:354 config/rs6000/rs6000.opt:358
-#, fuzzy
 msgid "Deprecated option.  Use -misel instead."
-msgstr "已弃用。请改用 -Os"
+msgstr "该选项已弃用。  请使用 -misel 代替。"
 
 #: config/powerpcspe/powerpcspe.opt:358
 #, fuzzy
@@ -12712,52 +12582,40 @@ msgid "Generate PPC750CL paired-single instructions."
 msgstr "生成 PPC750CL 配对单精度指令"
 
 #: config/powerpcspe/powerpcspe.opt:366
-#, fuzzy
-#| msgid "Deprecated option.  Use -mno-spe instead"
 msgid "Deprecated option.  Use -mno-spe instead."
-msgstr "该选项已弃用。请换用 -mno-spe"
+msgstr "该选项已弃用。请使用 -mno-spe 代替。"
 
 #: config/powerpcspe/powerpcspe.opt:370
 msgid "Deprecated option.  Use -mspe instead."
 msgstr "选项已弃用。请使用 -mspe 代替。"
 
 #: config/powerpcspe/powerpcspe.opt:374 config/rs6000/rs6000.opt:366
-#, fuzzy
-#| msgid "-mdebug=\tEnable debug output"
 msgid "-mdebug=\tEnable debug output."
-msgstr "-mdebug=\t启用调试输出"
+msgstr "-mdebug=\t启用调试输出。"
 
 #: config/powerpcspe/powerpcspe.opt:378 config/rs6000/rs6000.opt:370
-#, fuzzy
 msgid "Use the AltiVec ABI extensions."
-msgstr "使用 AltiVec 指令"
+msgstr "使用 AltiVec 扩展。"
 
 #: config/powerpcspe/powerpcspe.opt:382 config/rs6000/rs6000.opt:374
-#, fuzzy
 msgid "Do not use the AltiVec ABI extensions."
-msgstr "不使用位段指令"
+msgstr "不使用 AltiVec ABI 扩展。"
 
 #: config/powerpcspe/powerpcspe.opt:386
-#, fuzzy
 msgid "Use the SPE ABI extensions."
-msgstr "目标属性或 pragma 改变了 SPE ABI"
+msgstr "使用 SPE ABI 扩展。"
 
 #: config/powerpcspe/powerpcspe.opt:390
-#, fuzzy
 msgid "Do not use the SPE ABI extensions."
-msgstr "不使用位段指令"
+msgstr "不使用SPE ABI 扩展。"
 
 #: config/powerpcspe/powerpcspe.opt:394 config/rs6000/rs6000.opt:378
-#, fuzzy
-#| msgid "Use the ELFv1 ABI"
 msgid "Use the ELFv1 ABI."
-msgstr "使用 ELFv1 ABI"
+msgstr "使用 ELFv1 ABI。"
 
 #: config/powerpcspe/powerpcspe.opt:398 config/rs6000/rs6000.opt:382
-#, fuzzy
-#| msgid "Use the ELFv2 ABI"
 msgid "Use the ELFv2 ABI."
-msgstr "使用 ELFv2 ABI"
+msgstr "使用 ELFv2 ABI。"
 
 #: config/powerpcspe/powerpcspe.opt:405 config/rs6000/rs6000.opt:389
 msgid "using darwin64 ABI"
@@ -12800,10 +12658,8 @@ msgid "Avoid all range limits on call instructions."
 msgstr "为调用指令避免一切范围限制"
 
 #: config/powerpcspe/powerpcspe.opt:446
-#, fuzzy
-#| msgid "Generate Cell microcode"
 msgid "Generate Cell microcode."
-msgstr "生成 Cell 微代码"
+msgstr "生成 Cell 微代码。"
 
 #: config/powerpcspe/powerpcspe.opt:450
 #, fuzzy
@@ -13061,23 +12917,17 @@ msgstr ""
 "保留 PowerPC 476 's 链结堆叠由匹配向上 blr 与 bcl/bl insns 用于得到访问"
 
 #: config/powerpcspe/aix64.opt:24 config/rs6000/aix64.opt:24
-#, fuzzy
-#| msgid "Compile for 64-bit pointers"
 msgid "Compile for 64-bit pointers."
-msgstr "为 64 位指针编译"
+msgstr "为 64 位指针编译。"
 
 #: config/powerpcspe/aix64.opt:28 config/rs6000/aix64.opt:28
-#, fuzzy
-#| msgid "Compile for 32-bit pointers"
 msgid "Compile for 32-bit pointers."
-msgstr "为 32 位指针编译"
+msgstr "为 32 位指针编译。"
 
 #: config/powerpcspe/aix64.opt:32 config/powerpcspe/linux64.opt:28
 #: config/rs6000/aix64.opt:32 config/rs6000/linux64.opt:28
-#, fuzzy
-#| msgid "Select code model"
 msgid "Select code model."
-msgstr "选择代码模型"
+msgstr "选择代码模型。"
 
 #: config/powerpcspe/aix64.opt:49 config/rs6000/aix64.opt:49
 #, fuzzy
@@ -13145,10 +12995,8 @@ msgid "Assume all variable arg functions are prototyped."
 msgstr "假设所有可变参数函数都有原型"
 
 #: config/powerpcspe/sysv4.opt:99 config/rs6000/sysv4.opt:103
-#, fuzzy
-#| msgid "Use EABI"
 msgid "Use EABI."
-msgstr "使用 EABI"
+msgstr "使用 EABI。"
 
 #: config/powerpcspe/sysv4.opt:103 config/rs6000/sysv4.opt:107
 #, fuzzy
@@ -13217,25 +13065,20 @@ msgid ""
 msgstr "-G<N>\t将小于 N 字节的全局和静态数据放入一个特殊的节中(在某些目标机上)"
 
 #: config/lynx.opt:23
-#, fuzzy
-#| msgid "Support legacy multi-threading"
 msgid "Support legacy multi-threading."
-msgstr "支持传统多线程"
+msgstr "支持传统多线程。"
 
 #: config/lynx.opt:27
-#, fuzzy
-#| msgid "Use shared libraries"
 msgid "Use shared libraries."
-msgstr "使用共享库"
+msgstr "使用共享库。"
 
 #: config/lynx.opt:31
 msgid "Support multi-threading."
 msgstr "支持多线程。"
 
 #: config/nvptx/nvptx.opt:22
-#, fuzzy
 msgid "Generate code for a 32-bit ABI."
-msgstr "生成 32 位 SHmedia 代码"
+msgstr "为 32 位 ABI 生成代码。"
 
 #: config/nvptx/nvptx.opt:26
 msgid "Generate code for a 64-bit ABI."
@@ -13361,10 +13204,8 @@ msgid "Use RJMP / RCALL even though CALL / JMP are available."
 msgstr ""
 
 #: config/avr/avr.opt:57
-#, fuzzy
-#| msgid "Use an 8-bit 'int' type"
 msgid "Use an 8-bit 'int' type."
-msgstr "使用 8 位‘int’类型"
+msgstr "使用 8 位‘int’类型。"
 
 #: config/avr/avr.opt:61
 #, fuzzy
@@ -14593,9 +14434,8 @@ msgid "Equivalent to -mgpopt=local."
 msgstr "打开本地回应"
 
 #: config/nios2/nios2.opt:90
-#, fuzzy
 msgid "Equivalent to -mgpopt=none."
-msgstr "NONE (无)"
+msgstr "相当于 -mgpopt=none。"
 
 #: config/nios2/nios2.opt:94 config/c6x/c6x.opt:30 config/mips/mips.opt:134
 #: config/tilegx/tilegx.opt:45
@@ -16566,10 +16406,8 @@ msgid "Use integer madd/msub instructions."
 msgstr "使用整数乘加/减指令"
 
 #: config/mips/mips.opt:67
-#, fuzzy
-#| msgid "-march=ISA\tGenerate code for the given ISA"
 msgid "-march=ISA\tGenerate code for the given ISA."
-msgstr "-march=ISA\t为给定的 ISA 生成代码"
+msgstr "-march=ISA\t为给定的 ISA 生成代码。"
 
 #: config/mips/mips.opt:71
 #, fuzzy
@@ -17240,10 +17078,8 @@ msgid ""
 msgstr ""
 
 #: config/arc/arc.opt:238
-#, fuzzy
-#| msgid "-mcpu=CPU\tCompile code for ARC variant CPU"
 msgid "-mcpu=CPU\tCompile code for ARC variant CPU."
-msgstr "-mcpu=CPU\t为 ARC 变种 CPU 编译代码"
+msgstr "-mcpu=CPU\t为 ARC 变种 CPU 编译代码。"
 
 #: config/arc/arc.opt:242
 msgid ""
@@ -18677,10 +18513,8 @@ msgid "Convert conditional jumps in innermost loops to branchless equivalents."
 msgstr "将条件跳转替换为没有跳转的等值表示"
 
 #: common.opt:1596
-#, fuzzy
-#| msgid "Do not generate .size directives"
 msgid "Do not generate .size directives."
-msgstr "不生成 .size 伪指令"
+msgstr "不生成 .size 指令。"
 
 #: common.opt:1600
 #, fuzzy
@@ -23128,9 +22962,9 @@ msgstr "位段%qs类型无效"
 #. '%{foo:%*}'.  i.e. there is no * in the pattern on the left
 #. hand side of the :.
 #: gcc.c:5940
-#, fuzzy, gcc-internal-format
+#, gcc-internal-format
 msgid "spec failure: %<%%*%> has not been initialized by pattern match"
-msgstr "spec 失败：‘%%*’未经模式匹配初始化"
+msgstr "spec 失败：%<%%*%> 未经模式匹配初始化"
 
 #: gcc.c:5983
 #, fuzzy, gcc-internal-format
@@ -23138,9 +22972,9 @@ msgid "spec failure: unrecognized spec option %qc"
 msgstr "spec 错误：无法识别的 spec 选项‘%c’"
 
 #: gcc.c:6045
-#, fuzzy, gcc-internal-format
+#, gcc-internal-format
 msgid "unknown spec function %qs"
-msgstr "spec 函数名格式错误"
+msgstr "未知spec函数 %qs"
 
 #: gcc.c:6075
 #, fuzzy, gcc-internal-format
@@ -23359,9 +23193,9 @@ msgid "wrong number of arguments to %%:debug-level-gt"
 msgstr "给函数%<__builtin_next_arg%>的参数数目不对"
 
 #: gcov-tool.c:73
-#, fuzzy, gcc-internal-format, gfc-internal-format
+#, gcc-internal-format, gfc-internal-format
 msgid "error in removing %s\n"
-msgstr "\t正在移除 %s：\n"
+msgstr "移除 %s中出现错误\n"
 
 #: gcov-tool.c:104
 #, fuzzy, gcc-internal-format, gfc-internal-format
@@ -25158,10 +24992,9 @@ msgid "installation error, can't find crtoffloadtable.o"
 msgstr ""
 
 #: lto-wrapper.c:1000 lto-wrapper.c:1012
-#, fuzzy, gcc-internal-format, gfc-internal-format
-#| msgid "%s: %s"
+#, gcc-internal-format, gfc-internal-format
 msgid "%s: %s\n"
-msgstr "%s：%s"
+msgstr "%s：%s\n"
 
 #: lto-wrapper.c:1056
 #, gcc-internal-format
@@ -28878,10 +28711,9 @@ msgid "TYPE_METHOD_BASETYPE is not main variant"
 msgstr ""
 
 #: tree.c:13867
-#, fuzzy, gcc-internal-format
-#| msgid "verify_gimple failed"
+#, gcc-internal-format
 msgid "verify_type failed"
-msgstr "verify_gimple 失败"
+msgstr "verify_type 失败"
 
 #: value-prof.c:510
 #, gcc-internal-format
@@ -29186,10 +29018,9 @@ msgid "%qE attribute ignored for field of type %qT"
 msgstr "%qE属性为类型为%qT的字段所忽略"
 
 #: c-family/c-attribs.c:696
-#, fuzzy, gcc-internal-format
-#| msgid "visibility argument not a string"
+#, gcc-internal-format
 msgid "no_sanitize argument not a string"
-msgstr "visibility 的实参不是一个字符串"
+msgstr "no_sanitize 的参数不是一个字符串"
 
 #: c-family/c-attribs.c:826 ada/gcc-interface/utils.c:6235
 #, fuzzy, gcc-internal-format
@@ -30879,9 +30710,9 @@ msgid "-Wformat-security ignored without -Wformat"
 msgstr "-Wformat-security 未与 -Wformat 一起使用，已忽略"
 
 #: c-family/c-opts.c:928
-#, fuzzy, gcc-internal-format
+#, gcc-internal-format
 msgid "%<-fabi-compat-version=1%> is not supported, using =2"
-msgstr "不支持 -falign-loops=%d"
+msgstr "%<-fabi-compat-version=1%> 不被支持， 请使用 =2"
 
 #: c-family/c-opts.c:988
 #, fuzzy, gcc-internal-format
@@ -30901,7 +30732,7 @@ msgstr "打开输出文件 %s：%m"
 #: c-family/c-opts.c:1036
 #, gcc-internal-format, gfc-internal-format
 msgid "the \"%s\" debug format cannot be used with pre-compiled headers"
-msgstr ""
+msgstr "“%s”调试格式无法与预编译头文件一起使用"
 
 #: c-family/c-opts.c:1190
 #, gcc-internal-format
@@ -31712,7 +31543,7 @@ msgstr "switch 没有默认 case"
 #: c-family/c-warn.c:1393
 #, gcc-internal-format
 msgid "switch condition has boolean value"
-msgstr ""
+msgstr "switch 条件"
 
 #: c-family/c-warn.c:1466
 #, gcc-internal-format
@@ -32709,9 +32540,9 @@ msgid "%Ktotal size and element size must be a non-zero constant immediate"
 msgstr ""
 
 #: config/aarch64/aarch64.c:1053
-#, fuzzy, gcc-internal-format
+#, gcc-internal-format
 msgid "%qs is incompatible with %s %s"
-msgstr "%qs必须与%qs一起使用"
+msgstr "%qs 与 %s %s 不兼容"
 
 #: config/aarch64/aarch64.c:1055
 #, fuzzy, gcc-internal-format
@@ -32739,9 +32570,9 @@ msgid "tuning string missing in option (%s)"
 msgstr "%s: 不适用的选项 -- %c\n"
 
 #: config/aarch64/aarch64.c:10406
-#, fuzzy, gcc-internal-format, gfc-internal-format
+#, gcc-internal-format, gfc-internal-format
 msgid "unknown tuning option (%s)"
-msgstr "spec 函数名格式错误"
+msgstr "未知调整选项 (%s)"
 
 #: config/aarch64/aarch64.c:10683
 #, fuzzy, gcc-internal-format
@@ -40024,9 +39855,9 @@ msgid "typedef %q+D declared %<inline%>"
 msgstr "typedef%q+D声明为%<inline%>"
 
 #: c/c-decl.c:6685
-#, fuzzy, gcc-internal-format
+#, gcc-internal-format
 msgid "typedef %q+D declared %<_Noreturn%>"
-msgstr "typedef%q+D声明为%<inline%>"
+msgstr "typedef%q+D 声明为%<_Noreturn%>"
 
 #: c/c-decl.c:6727
 #, gcc-internal-format
@@ -41633,9 +41464,9 @@ msgid "%<#pragma %s%> may only be used in compound statements"
 msgstr "%<#pragma omp flush%>只能用在复合语句中"
 
 #: c/c-parser.c:10972 cp/parser.c:38837
-#, fuzzy, gcc-internal-format
+#, gcc-internal-format
 msgid "%<#pragma acc routine%> must be at file scope"
-msgstr "Objective-C 声明只能出现在全局作用域中"
+msgstr "%<#pragma acc routine%> 必须在文件范围内"
 
 #: c/c-parser.c:11050 cp/parser.c:38918
 #, gcc-internal-format
@@ -42202,7 +42033,7 @@ msgstr "%<#pragma GCC pop_options%>缺少相应的%<#pragma GCC push_options%>"
 #: c/c-parser.c:17575
 #, fuzzy, gcc-internal-format
 msgid "%<#pragma omp declare reduction%> not at file or block scope"
-msgstr "Objective-C 声明只能出现在全局作用域中"
+msgstr "%<#pragma omp declare reduction%>"
 
 #: c/c-parser.c:17652
 #, gcc-internal-format
@@ -45000,9 +44831,8 @@ msgstr "%qD 已被隐藏"
 
 #: cp/class.c:2863
 #, fuzzy, gcc-internal-format
-#| msgid "  by %q+D"
 msgid "  by %qD"
-msgstr "%q+D所隐藏"
+msgstr " 由%qD"
 
 #: cp/class.c:2896
 #, fuzzy, gcc-internal-format
@@ -48404,9 +48234,9 @@ msgid "reference %qs cannot be declared %<mutable%>"
 msgstr "常量%qs不能被声明为%<mutable%>"
 
 #: cp/decl.c:11778
-#, fuzzy, gcc-internal-format
+#, gcc-internal-format
 msgid "typedef declared %<auto%>"
-msgstr "typedef%q+D声明为%<inline%>"
+msgstr "typedef 声明为%<auto%>"
 
 #: cp/decl.c:11783
 #, gcc-internal-format
@@ -52910,9 +52740,9 @@ msgid "invalid type for property"
 msgstr "不能设置只读属性"
 
 #: cp/parser.c:32011
-#, fuzzy, gcc-internal-format
+#, gcc-internal-format
 msgid "%<wait%> expression must be integral"
-msgstr "num_threads 表达式必须是整型的"
+msgstr "%<wait%>  表达式必须是整型的"
 
 #: cp/parser.c:32724
 #, gcc-internal-format
@@ -54885,9 +54715,9 @@ msgid ""
 msgstr ""
 
 #: cp/semantics.c:5977
-#, fuzzy, gcc-internal-format
+#, gcc-internal-format
 msgid "linear step expression must be integral"
-msgstr "num_threads 表达式必须是整型的"
+msgstr "linear step 表达式必须是整型的"
 
 #: cp/semantics.c:6080
 #, gcc-internal-format
@@ -54905,9 +54735,9 @@ msgid "%qD is not a variable in clause %<lastprivate%>"
 msgstr "%qD在%<lastprivate%>子句中不是一个变量"
 
 #: cp/semantics.c:6240
-#, fuzzy, gcc-internal-format
+#, gcc-internal-format
 msgid "%<gang%> static expression must be integral"
-msgstr "num_threads 表达式必须是整型的"
+msgstr "%<gang%> 静态表达式必须是整型的"
 
 #: cp/semantics.c:6254
 #, fuzzy, gcc-internal-format
@@ -54915,19 +54745,19 @@ msgid "%<gang%> static value must be positive"
 msgstr "%<num_threads%>值必须为正"
 
 #: cp/semantics.c:6288
-#, fuzzy, gcc-internal-format
+#, gcc-internal-format
 msgid "%<gang%> num expression must be integral"
-msgstr "num_threads 表达式必须是整型的"
+msgstr "%<gang%> 数字表达式必须是整型的"
 
 #: cp/semantics.c:6291
-#, fuzzy, gcc-internal-format
+#, gcc-internal-format
 msgid "%<vector%> length expression must be integral"
-msgstr "num_threads 表达式必须是整型的"
+msgstr "%<vector%>长度表达式必须是整型的"
 
 #: cp/semantics.c:6295
-#, fuzzy, gcc-internal-format
+#, gcc-internal-format
 msgid "%<worker%> num expression must be integral"
-msgstr "num_threads 表达式必须是整型的"
+msgstr "%<worker%> 数字表达式必须是整型的"
 
 #: cp/semantics.c:6317
 #, fuzzy, gcc-internal-format
@@ -56548,9 +56378,9 @@ msgid "Conversion of an Infinity or Not-a-Number at %L to INTEGER"
 msgstr "在%L处把一个无穷大或非数转换为 INTEGER"
 
 #: fortran/arith.c:117 fortran/arith.c:1973
-#, fuzzy, gcc-internal-format
+#, gcc-internal-format
 msgid "gfc_arith_error(): Bad error code"
-msgstr "gfc_trans_code()：错误的语句代码"
+msgstr "gfc_arith_error()：错误的语句代码"
 
 #: fortran/arith.c:150
 #, gcc-internal-format
@@ -56558,9 +56388,9 @@ msgid "Fix min_int calculation"
 msgstr ""
 
 #: fortran/arith.c:530
-#, fuzzy, gcc-internal-format
+#, gcc-internal-format
 msgid "gfc_range_check(): Bad type"
-msgstr "gfc_trans_code()：错误的语句代码"
+msgstr "gfc_range_check()：错误类型"
 
 #: fortran/arith.c:603
 #, gcc-internal-format
@@ -60120,7 +59950,7 @@ msgstr "形参%qD包含了指向具有未知边界数组%qT的引用"
 #: fortran/dump-parse-tree.c:312
 #, fuzzy, gcc-internal-format
 msgid "show_ref(): Bad component code"
-msgstr "gfc_trans_code()：错误的语句代码"
+msgstr "show_ref()：错误的语句代码"
 
 #: fortran/dump-parse-tree.c:575
 #, fuzzy, gcc-internal-format
@@ -60133,9 +59963,9 @@ msgid "show_expr(): Don't know how to show expr"
 msgstr ""
 
 #: fortran/dump-parse-tree.c:2856
-#, fuzzy, gcc-internal-format
+#, gcc-internal-format
 msgid "show_code_node(): Bad statement code"
-msgstr "gfc_trans_code()：错误的语句代码"
+msgstr "show_code_node()：错误的语句代码"
 
 #: fortran/dump-parse-tree.c:3150 fortran/dump-parse-tree.c:3242
 #, fuzzy, gcc-internal-format
